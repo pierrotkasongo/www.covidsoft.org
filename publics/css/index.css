@@ -1,0 +1,33 @@
+.content {
+    margin-top: 5%;
+}
+.entete{
+    margin-top: 30%;
+}
+p{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+p span {
+    font-weight: 590;
+}
+input, select, option{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 14px;
+}
+input:focus, select:focus {
+    box-shadow: none !important;
+}
+.envoyer {
+    background-color: #3d5997;
+    font-weight: 550;
+}
+.envoyer:hover {
+    background-color: #1a3879;
+}
+.alert {
+    height: 30px;
+    line-height: 2px;
+    font-size: 15px;
+}

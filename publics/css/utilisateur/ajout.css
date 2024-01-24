@@ -1,0 +1,113 @@
+body {
+    font-size: .875rem;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    background-color: rgb(21, 21, 21);
+}
+
+@media (max-width: 767.98px) {
+    .sing-out {
+        display: none;
+    }
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: rgb(189, 189, 189);
+}
+.sidebar .nav-link.active {
+    color: #2470dc;
+}
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgb(21, 21, 21);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    font-weight: 550;
+}
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+.sing-out {
+    background-color: rgb(21, 21, 21);
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    bottom: 2px;
+}
+.rounded-circle {
+    height: 65px;
+    width: 65px;
+    position: relative;
+    left: 5px;
+}
+.name{
+    position: relative;
+    top: 20px;
+    color: #a09c9c;
+    right: 10px;
+}
+.actif {
+    background-color: black;
+    border-left: 2px solid #2470dc;
+}
+.led {
+    height: 9px;
+    width: 9px;
+    border-radius: 30px;
+    background-color: red;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.form-select-sm {
+    height: 35px;
+    line-height: 15px;
+    color: #727272;
+}
+label {
+    font-size: 13px;
+}
+input:empty {
+    font-size: 14px;
+}
+input:focus,
+select:focus,
+button:focus {
+    box-shadow: none !important;
+}
+input,
+select,
+#categ {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}

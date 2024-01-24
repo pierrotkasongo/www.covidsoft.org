@@ -1,0 +1,29 @@
+.content{
+    margin-top: 8%;
+}
+img{
+    height: 38%;
+    width: 38%;
+    position: relative;
+    left: 30%;
+}
+p{
+    font-size: 14.5px;
+}
+button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(206, 65, 65);
+    position: relative;
+    left: 47%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    color: white;
+}

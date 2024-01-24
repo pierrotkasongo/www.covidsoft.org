@@ -1,0 +1,210 @@
+body {
+    font-size: .875rem;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    background-color: rgb(21, 21, 21);
+}
+@media (max-width: 767.98px) {
+    .sing-out {
+        display: none;
+    }
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: rgb(189, 189, 189);
+}
+.sidebar .nav-link.active {
+    color: #2470dc;
+}
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgb(21, 21, 21);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    font-weight: 550;
+}
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+.rounded-circle {
+    height: 65px;
+    width: 65px;
+    position: relative;
+    left: 5px;
+}
+.circle {
+    height: 35px;
+    width: 35px;
+}
+.actif {
+    background-color: black;
+    border-left: 2px solid #0a58ca;
+}
+.name{
+    position: relative;
+    top: 20px;
+    color: #a09c9c;
+    right: 10px;
+}
+.led {
+    height: 9px;
+    width: 9px;
+    border-radius: 30px;
+    background-color: red;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.sing-out {
+    background-color: rgb(21, 21, 21);
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    bottom: 2px;
+}
+#input {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    font-size: 14.4px;
+    width: 102%;
+    border: 1px solid #8ab2ee;
+} 
+.alert {
+    height: 35px;
+    line-height: 3px;
+    text-align: center;
+}
+.content {
+    height: 135px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 1px;
+    display: flex;
+    position: relative;
+}
+.dash1, .dash2, .dash3, .dash4{
+    height: 125px;
+    width: 32%;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.dash1{
+    background-color: #212529;
+}
+.dash2 {
+    background-color: #dc3545;
+}
+.dash3 {
+    background-color: #198754;
+}
+.dash4{
+    background-color: #2d2d2d;
+}
+.fa-clipboard-list, .fa-procedures, .fa-heartbeat, .fa-list-ol{
+    color: white;
+    font-size: 32px;
+    position: relative;
+    top: 30px;
+    left: 5%;
+}
+.valeur{
+    float: right;
+    color: white;
+    position: relative;
+    top: 33px;
+    right: 5%;
+    font-weight:bold;
+    font-size: 15px;
+}
+.dash-text{
+    position: relative;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    float: right;
+}
+.div{
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 10px;
+}
+.div > a{
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #2d2d2d;
+}
+.div > .active{
+    color: #0a58ca;
+}
+.tab{
+    max-height: 280px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.table-responsive {
+    text-align: center;
+}
+.th {
+    background-color: #252627;
+}
+.title {
+    font-size: 13px;
+    color: white;
+    line-height: 30px;
+}
+.ajout{
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+.action {
+    height: 25px;
+    width: 25px;
+}
+.fa-trash-alt,
+.fa-edit {
+    font-size: 13px;
+    position: relative;
+    bottom: 10px;
+    right: 6px;
+}
+input:empty {
+    font-size: 14px;
+}
+input:focus,
+select:focus,
+button:focus {
+    box-shadow: none !important;
+}
+#exampleModalLabel{
+    font-size: 15px;
+    font-weight: bold;
+}
